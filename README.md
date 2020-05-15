@@ -1,8 +1,8 @@
 # README
 
-[http://localhost:9000](http://localhost:9000)
+[http://nodejs-service:9000](http://nodejs-service:9000)
 
-[http://localhost:9000](http://localhost:9090)
+[http://prometheus-server:9090](http://prometheus-server:9090)
 
 
 ## History Command
