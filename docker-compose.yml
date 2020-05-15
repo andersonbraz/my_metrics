@@ -1,16 +1,16 @@
 version: '3.7'
-    services:
+services:
 
-        nodejs-service:
-            image: nodejs-api:1.0
-            container_name: nodejs-service
-            ports:
-                - 9000:9000
+    nodejs-service:
+        image: nodejs-api:1.0
+        container_name: nodejs-service
+        ports:
+            - 9000:9000
 
-        prometheus-server:
-            image: prom/prometheus
-            container_name: prometheus-server
-            ports:
-                - 9090:9090
-            volumes:
-                - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+    prometheus-server:
+        image: prom/prometheus
+        container_name: prometheus-server
+        ports:
+            - 9090:9090
+        volumes:
+            - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
