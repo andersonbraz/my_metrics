@@ -13,4 +13,4 @@ services:
         ports:
             - 9090:9090
         volumes:
-            - "./config/prometheus.yml:/etc/prometheus/prometheus.yml"
+            - "/Users/andersonbraz/Docker/my_metrics/config/prometheus.yml:/etc/prometheus/prometheus.yml"
