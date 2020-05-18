@@ -4,6 +4,7 @@ docker ps
 docker container ls -a
 docker container stop nodejs-service
 docker container stop prometheus-server
+docker container stop grafana-server
 docker container prune -f
 docker volume prune -f
 docker network prune -f
