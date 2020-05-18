@@ -1,12 +1,14 @@
 version: '3.7'
 services:
 
+    # nodejs-express-api
     nodejs-service:
         image: nodejs-api:1.0
         container_name: nodejs-service
         ports:
             - 9000:9000
 
+    # prometheus
     prometheus-server:
         image: prom/prometheus
         container_name: prometheus-server
@@ -14,3 +16,12 @@ services:
             - 9090:9090
         volumes:
             - "/Users/andersonbraz/Docker/my_metrics/config/prometheus.yml:/etc/prometheus/prometheus.yml"
+    
+    # grafana
+    grafana:
+        image: grafana/grafana
+        container_name: grafana-server
+        ports:
+            - '3000:3000'
+        depends_on:
+            - prom-server
