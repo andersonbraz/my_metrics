@@ -32,6 +32,6 @@ services:
         networks:
             - metrics_network
 
-    networks: 
-        metrics_network:
-            driver: bridge
+networks: 
+    metrics_network:
+        driver: bridge
